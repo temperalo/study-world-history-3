@@ -1,0 +1,20 @@
+# .claude/ runtime & template artifacts — keep out of version control.
+# Shipped by the template (tpl-{code,docs}); covers upgrade backups/staging
+# and hook runtime output that should never be committed.
+
+# Template upgrade machinery (transient)
+.template-staging/
+.template-backup-*/
+
+# Hook runtime state (per-machine, regenerated)
+.tracking-state.json
+.go-session-override.json
+scheduled_tasks.lock
+
+# Session transcripts — keep the README, ignore captured sessions
+dialogs/*
+!dialogs/README.md
+
+# Usage logs — keep the README, ignore the CSVs
+usage/*.csv
+!usage/README.md

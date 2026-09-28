@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Builds / output
+dist/
+build/
+*.egg-info/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Logs / runtime data
+*.log
+data/
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# ZCode runtime: config.json is machine-local (wires hooks/MCP, may carry bearer tokens).
+# Agents and skills are needed by the ZCode client — ship them.
+.zcode/config.json
